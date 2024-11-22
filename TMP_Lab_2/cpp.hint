@@ -1,0 +1,4 @@
+// Файлы указаний помогают среде IDE Visual Studio интерпретировать идентификаторы Visual C++
+// (например, имена функций и макросов).
+// Дополнительные сведения: https://go.microsoft.com/fwlink/?linkid=865984
+#define GENERATE_RIGHT_PART(name, k) static double name (double x, double y) { using namespace std; return 2. * sin(PI * y) + k * k * (1. - x) * x * sin(PI * y) + PI * PI * (1. - x) * x * sin(PI * y); }
