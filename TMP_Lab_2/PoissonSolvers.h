@@ -43,6 +43,7 @@ using HelmholtzSolverType = double (*)(T*, int, T, PoissonFuncType<T>, T, const 
     h - шаг сетки.
     Ќумераци€ узлов (внутренних): естественна€ (построчна€).
 */
+
 template<typename T>
 double jacobyMethodHelmholtzSolve(T* A, int n, T k, PoissonFuncType<T> f, T h, const T minDiscrepancy) {
     T* newY = new T[(n + 1) * (n + 1)]; // «начени€ на следующей итерации
